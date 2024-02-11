@@ -2,11 +2,24 @@ from pydub import AudioSegment
 import os
 from pathlib import Path
 
-AudioSegment.converter = "C:\\Users\\korni\\Downloads\\ffmpeg-2023-11-02-git-4dbfb52230-full_build\\bin\\ffmpeg.exe"
-AudioSegment.ffmpeg = "C:\\Users\\korni\\Downloads\\ffmpeg-2023-11-02-git-4dbfb52230-full_build\\bin\\ffmpeg.exe"
-AudioSegment.ffprobe = "C:\\Users\\korni\\Downloads\\ffmpeg-2023-11-02-git-4dbfb52230-full_build\\bin\\ffprobe.exe"
-source_path = r"C:\\Users\\korni\\seminarium\\semi\\source"
-dest_path = r"C:\\Users\\korni\\seminarium\\semi\\exported"
+# AudioSegment.converter = "C:\\Users\\korni\\Documents\\ffmpeg-6.1-full_build\\bin\\ffmpeg.exe"
+# AudioSegment.ffmpeg = "C:\\Users\\korni\\Documents\\ffmpeg-6.1-full_build\\bin\\ffmpeg.exe"
+# AudioSegment.ffprobe = "C:\\Users\\korni\\Downloads\\ffmpeg-2023-11-02-git-4dbfb52230-full_build\\bin\\ffprobe.exe"
+# source_path = r"C:\\Users\\korni\\seminarium\\semi\\source"
+# dest_path = r"C:\\Users\\korni\\seminarium\\semi\\exported"
+#
+
+# ffmpeg_path = r"C:\Users\korni\Documents\ffmpeg-6.1-full_build\bin"
+# ffprobe_path = r"C:\Users\korni\Documents\ffmpeg-6.1-full_build\bin"
+#
+# AudioSegment.converter = ffmpeg_path
+# AudioSegment.ffmpeg = ffmpeg_path
+# AudioSegment.ffprobe = ffprobe_path
+#
+source_path = r"C:\Users\korni\seminarium\semi\source"
+dest_path = r"C:\Users\korni\seminarium\semi\exported"
+
+
 
 for file in os.listdir(source_path):
     music_type = os.listdir(os.path.join(source_path , file))
